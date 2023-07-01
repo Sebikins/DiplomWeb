@@ -46,7 +46,7 @@ const BookPage = observer(() => {
                                             className="bg-primary text-light"
                                             onClick={() => setBookVisible(true)}
                                         >
-                                            Добавить описание
+                                            Добавить рецензию
                                         </Button>
                                         <SetDescription show={bookVisible} onHide={() => setBookVisible(false)}/>
                                     </Col>
