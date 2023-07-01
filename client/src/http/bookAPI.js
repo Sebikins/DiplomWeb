@@ -47,26 +47,3 @@ export const fetchOneBook = async (id) => {
     const {data} = await $host.get('api/book' + '/'+id)
     return data
 }
-
-// ------ library ------- //
-
-export const addToBasket = async (bookId) => {
-    const {response} = await $authHost.post('api/basket', bookId)
-    return response
-}
-
-export const deleteFromBasket = async (id) => {
-    const {response} = await $authHost.post('api/basket/delete', {id:id})
-    return response
-}
-
-export const getBasket = async () => {
-    const {data} = await $authHost.get('api/basket')
-    return data
-}
-
-
-export const updateAmount = async (_id, _amount) => {
-    const {data} = await $authHost.post('api/book/update/'+_id, {_id, _amount})
-    return data
-}
