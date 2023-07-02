@@ -21,7 +21,7 @@ const start = async () =>
 {
     try{
         await sequelize.authenticate()
-        await sequelize.sync()
+        await sequelize.sync()// сверяемся со схемой бд.
         app.listen(PORT,()=> console.log(`sever run on ${PORT}`))
     }
     catch(e){

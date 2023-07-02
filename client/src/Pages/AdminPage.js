@@ -26,7 +26,7 @@ const Admin = observer( () => {
                 className="mt-4 p-2"
                 onClick={() => setBrandVisible(true)}
             >
-                Добавить Жанр
+                Добавить жанр
             </Button>
 
             <Button
